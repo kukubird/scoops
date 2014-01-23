@@ -1,0 +1,66 @@
+1.Coding Style
+	1. THe importance of making code readable
+Code is read more than it is written.What this means is that you should go the extra mile to make your code as readable as possible:
+	®Avoid abbreviating variable names.
+    ®Write out your function argument names.
+	®Document your classes and methods.
+	®Refactor repeated lines of code into reusable functions or methods.
+
+	1.2 PEP 8
+PEP 8 is the official style guide for Python.
+PEP 8 describes coding conventions such as:
+ 	®“Use 4 spaces per indentation level.”
+    ®“Separate top-level function and class de nitions with two blank lines.”
+	®“Method de nitions inside a class are separated by a single blank line.”
+
+	1.5 Avoid using Import *
+
+2. The Optimal Djnago Environment Setup
+	2.1 Use the Same Database Engine Everywhere
+		A common developer pitfall is using SQLite3 for local development and PostgreSQL (or another
+		database besides SQLite3) in production. is section applies not only to the SQLite3/PostgreSQL
+		scenario, but to any scenario where you’re using two different databases and expecting them to behave
+		identically.
+
+
+	2.1.3 Different Databases Have Different Field Types/Constraints
+		Keep in mind that different databases handle typing of eld data differently. Django’s ORM attempts
+		to accommodate those differences, but there’s only so much that it can do.
+
+
+	2.2 Use pip and Virtualenv
+		Pip is a tool that fetches Python packages from the Python Package Index and its mirrors. It is used
+		to manage and install Python packages. It’s like easy install but has more features, the key feature
+		being support for virtualenv.
+
+		Virtualenv is a tool for creating isolated Python environments for maintaining package dependen-cies.
+		It’s great for situations where you’re working on more than one project at a time, and where
+		there are clashes between the version numbers of different libraries that your projects use.
+
+	2.4 Use a aversion control system
+		Version control systems are also known as revision control or source control. Whenever you work on
+		any Django project, you should use a version control system to keep track of your code changes.	
+
+
+3. How to lay out django Projects
+
+	3.1 Django 1.5's Default Project Layout
+		Project layout is one of those areas where core Django developers have differing opinions about
+		what they consider best practice. In this chapter, we present our approach, which is one of the most
+		commonly-used ones.
+
+4. Fundamentals of Django App Design
+		A Django project is a web application powered by the Django web framework.
+ 		Django apps are small libraries designed to represent a single aspect of a project. A Django project is made up of many Django apps. Some of those apps are internal to the project and will never be reused; others are third-party Django packages.
+		Third-party Django packages are simply pluggable, reusable Django apps that have been packaged with the Python packaging tools. We’ll begin coverage of them in chapter 17, Django’s Secret
+
+
+5. Settings and Requirements Files
+		® All settings les need to be version-controlled. is is especially true in production environ-ments, where dates, times, and explanations for settings changes absolutely must be tracked.
+		® Don’t Repeat Yourself. You should inherit from a base settings le rather than cutting-and-pasting from one le to another.
+		® Keep secret keys safe. They should be kept out of version control.
+		
+	5.1 
+
+
+
